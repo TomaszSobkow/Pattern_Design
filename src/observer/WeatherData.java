@@ -2,9 +2,12 @@ package observer;
 
 import observer.interfacese.CurrentConditions;
 import observer.interfacese.Forecast;
+import observer.interfacese.ObjectBeingObserved;
 import observer.interfacese.Statistics;
 
-public class WeatherData {
+public class WeatherData  {
+
+
 
     private CurrentConditions currentConditions;
     private Forecast forecast;
@@ -23,6 +26,8 @@ public class WeatherData {
         forecast.update(temp,humidity,pressure);
         statistics.update(temp,humidity,pressure);
     }
+
+
 
 
 }
